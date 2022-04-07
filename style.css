@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-image: url('img/crosses.jpeg');
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#headerContent{
+    display: flex;
+    flex-direction: column;
+}
+header h1{
+    font-style: italic;
+    font-weight: 300;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+#button{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+}
+.scroll::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #fff;
+  	border-bottom: 2px solid #fff;
+		transform: rotate(-45deg);
+	}
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+#firstSection{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#firstSectionContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/kyivatwar2.jpg');
+}
+#warImage{
+    margin-top: 3vw;
+    width: 70%;
+    height: 80vh;
+    margin-left: 5%;
+}
+#aboutWar{
+    width: 100%;
+    height: 60vh;
+    padding-top: 5vh;
+    color: white;
+    font-size: xx-large;
+    padding-top: 10vh;
+}
+#secondSection{
+    color: black;
+}
+#secondSectionContent{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('img/notwar.jpg');
+}
+#secondSectionContent h1{
+    padding-top: 20vh;
+}
+#secondSectionDiv{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-between;
+    width: 100%;
+    height: 100%;
+}
+#secondSectionDiv h3{
+    margin-left: 10%;
+}
+#textWarSecond{
+    margin-right: 10%;
+}
+#secondImgs{
+    background-image: url('img/dzieci.jpg');
+    text-align: center;
+}
